@@ -4,8 +4,10 @@
 
 ### The Setup
 
-Essentially the goall was to run the ansible playbook and have it run to the Project 2 machine. I was able to get the setup for the ansible script to work and all of the data is there as shown below
+Essentially the goall was to run the ansible playbook and have it run to the Project 2 machine. I was able to get the setup for the ansible script to work and all of the data is there as shown below:
 
+
+### Software Block Diagram
 ![alt text](https://www.tutorialandexample.com/wp-content/uploads/2020/12/image-83.png)
 
 
