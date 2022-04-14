@@ -15,14 +15,14 @@ Essentially, the problem that we face is that we need to be able to pusblish thi
 File | Description
 ---- | -----------
 `site.yml` | Main playbook - runs all tasks on all servers
-'main.yml' | Used playbook - runs all the tasks for docker and drupal
+`main.yml` | Used playbook - runs all the tasks for docker and drupal
 `anygroup.yml` | Group playbook - runs all tasks on servers in group *anygroup*
 
 This is what we have to make the main.yml work:
 
 ![image](https://user-images.githubusercontent.com/77757661/163452713-d6c7ef92-24a1-4a2e-817a-a17b11ccdadf.png)
 
-Overall after this we use the line 'ansible-playbook site.yml' to run the script so that it publishes on our Project2 VM.
+Overall after this we use the line `ansible-playbook site.yml` to run the script so that it publishes on our Project2 VM.
 
 ### Software Block Diagram
 ![alt text](https://www.tutorialandexample.com/wp-content/uploads/2020/12/image-83.png)
