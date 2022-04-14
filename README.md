@@ -27,6 +27,13 @@ Overall after this we use the line `ansible-playbook site.yml` to run the script
 ### Software Block Diagram
 ![alt text](https://www.tutorialandexample.com/wp-content/uploads/2020/12/image-83.png)
 
+### References
+
+https://user-images.githubusercontent.com/77757661/163452713-d6c7ef92-24a1-4a2e-817a-a17b11ccdadf.png
+https://docs.ansible.com/ansible/latest/collections/community/docker/docker_container_module.html#ansible-collections-community-docker-docker-container-module
+https://docs.ansible.com/ansible/latest/collections/community/general/snap_module.html
+https://www.axelerant.com/blog/managing-docker-containers-using-ansible
+
 ## Copyright and license
 
 Copyright 2017 Achim Christ, released under the [MIT license](LICENSE)
