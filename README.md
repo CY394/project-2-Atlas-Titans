@@ -8,52 +8,24 @@ The purpose of this project was to be able to pull a docker image of Drupal on o
 
 ![image](https://user-images.githubusercontent.com/77757661/163450316-04babd47-0e96-4722-aacb-0d7caa941f23.png)
 
-### Software Block Diagram
-![alt text](https://www.tutorialandexample.com/wp-content/uploads/2020/12/image-83.png)
+### Problem
 
-
-### Playbooks
-
-Playbooks associate hosts (groups) with roles. Define a separate playbook for each of your groups, and then import all playbooks in the main `site.yml` playbook.
+Essentially, the problem that we face is that we need to be able to pusblish this onto another VM. this calls into use the Ansible Script that we want. We need to be able to use Drupal on the Prject VM while making the Script on the control VM. So I cloned the project from github and used the main.yml as the ansible script to check and stall all that I needed, and the site.yml to run all the tasks and the anygroup.yml to run all takss in the server in group as described below:
 
 File | Description
 ---- | -----------
 `site.yml` | Main playbook - runs all tasks on all servers
+'main.yml' | Used playbook - runs all the tasks for docker and drupal
 `anygroup.yml` | Group playbook - runs all tasks on servers in group *anygroup*
 
-### Roles
+This is what we have to make the main.yml work:
 
-The group playbooks (e.g. `anygroup.yml`) simply associate hosts with roles. Actual tasks are defined in these roles:
+![image](https://user-images.githubusercontent.com/77757661/163452713-d6c7ef92-24a1-4a2e-817a-a17b11ccdadf.png)
 
-```
-roles/
-├── common/             Applied to all servers
-│   ├── handlers/
-│   ├── tasks/
-│   │   └ main.yml      Tasks for all servers
-│   └── templates/
-└── anyrole/            Applied to servers in specific group(s)
-    ├── handlers/
-    ├── tasks/
-    │   └ main.yml      Tasks for specific group(s)
-    └── templates/
-```
+Overall after this we use the line 'ansible-playbook site.yml' to run the script so that it publishes on our Project2 VM.
 
-Consider adding separate roles for different applications (e.g. webservers, dbservers, hypervisors, etc.), or for different responsibilities which servers fulfill (e.g. infra_server vs. infra_client).
-
-### Tags
-
-Use the following command to show a list of available tags:
-
-```
-ansible-playbook site.yml --list-tags
-```
-
-Consider adding tags for individual components (e.g. DNS, NTP, HTTP, etc.).
-
-Role | Tags
---- | ---
-Common | all,check
+### Software Block Diagram
+![alt text](https://www.tutorialandexample.com/wp-content/uploads/2020/12/image-83.png)
 
 ## Copyright and license
 
