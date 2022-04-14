@@ -4,8 +4,9 @@
 
 ### The Purpose
 
-The purpose of this project was to be able to pull a docker image on one Virtual Machine and push it to another through an Ansible script
+The purpose of this project was to be able to pull a docker image of Drupal on one Virtual Machine and push it to another through the use of an Ansible script. Getting more into what Drupal is: Drupal is a free, open-source content management system (CMS) with a large, supportive community. It's used by millions of people and organizations around the globe to build and maintain their websites. Using Drupal to run a website is a very impressive help that can help anyone project content onto websites with ease and the ead goal is to pusblish drupal to a VM like so:
 
+![image](https://user-images.githubusercontent.com/77757661/163450316-04babd47-0e96-4722-aacb-0d7caa941f23.png)
 
 ### Software Block Diagram
 ![alt text](https://www.tutorialandexample.com/wp-content/uploads/2020/12/image-83.png)
