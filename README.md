@@ -2,9 +2,9 @@
 
 [![GitHub Issues](https://img.shields.io/github/issues/acch/ansible-boilerplate.svg)](https://github.com/acch/ansible-boilerplate/issues) [![GitHub Stars](https://img.shields.io/github/stars/acch/ansible-boilerplate.svg?label=github%20%E2%98%85)](https://github.com/acch/ansible-boilerplate/) [![License](https://img.shields.io/github/license/acch/ansible-boilerplate.svg)](LICENSE)
 
-### The Setup
+### The Purpose
 
-Essentially the goall was to run the ansible playbook and have it run to the Project 2 machine. I was able to get the setup for the ansible script to work and all of the data is there as shown below:
+The purpose of this project was to be able to pull a docker image on one Virtual Machine and push it to another through an Ansible script
 
 
 ### Software Block Diagram
